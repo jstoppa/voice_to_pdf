@@ -1,0 +1,160 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-section {
+    flex: 0 0 30%;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+
+.right-section {
+    flex: 0 0 68%;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .left-section,
+    .right-section {
+        flex-basis: 100%;
+
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
+
+
+
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+.drop-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    padding-bottom: 11px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box
+}
+
+.preview {
+    margin-top: 20px;
+}
+
+.pdf-display {
+
+    background-color: #fff;
+    border: 1px solid #ccc;
+    min-height: 300px
+}
+
+.voice-text-display {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    min-height: 300px
+}
+
+.warning {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%
+}
+
+button:disabled {
+    background-color: #ccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#pdf-content,
+#messsageFromAPI {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-section,
+    .right-section {
+        padding-right: 0;
+    }
+}
+
+#loadingSpinner svg {
+    width: 50px;
+    height: 50px;
+}
+
+#loadingSpinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
