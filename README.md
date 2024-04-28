@@ -1,6 +1,6 @@
 # Voice to PDF
 
-This is a prototype app that allows you to complete PDF document using voice commands.
+This is a prototype app that allows you to complete PDF documents using voice commands.
 
 See details on how it works -> [DEMO - Voice to PDF - Complete PDF documents with voice commands using the Claude 3 Opus API](https://jstoppa.com/posts/artificial-intelligence/demos/voice_to_pdf_complete_pdf_document_with_voice_commands_using_claude_3_opus_api/post/)
 
